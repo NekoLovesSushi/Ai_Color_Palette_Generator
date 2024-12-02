@@ -4,73 +4,115 @@ body {
     background-color: #f9f9f9;
     margin: 0;
     padding: 0;
+    text-align: center;
+}
+
+.box {
+    background-color: #B0BEC5;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 800px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
     text-align: center;
     font-size: 36px;
-    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 form {
     display: flex;
     justify-content: center;
-    margin: 20px;
+    margin-bottom: 20px;
     border-radius: 4px;
     padding: 12px;
+    gap: 12px;
 }
 
 input[type="text"] {
-    padding: 10px;
+    padding: 12px;
     font-size: 16px;
     width: 300px;
-    margin-right: 10px;
+    margin-right: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
 }
 
 input[type="submit"] {
-    padding: 10px 20px;
+    padding: 12px 20px;
     font-size: 16px;
     cursor: pointer;
     border-radius: 4px;
     padding: 12px;
+    background-color: #1F3A68;
+    color: white;
+    transition: background-color 0.3s ease;
 }
 
-#imageContainer {
-    text-align: center;
-    margin: 20px;
-    border-radius: 4px;
-    padding: 12px;
+input[type="submit"]:hover {
+    background-color: #A9D6E5;
 }
 
-#paletteContainer {
-    text-align: center;
-    margin: 20px;
-    border-radius: 4px;
-    padding: 12px;
+.palette-container {
+    background-color: snow;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 800px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .palette {
     display: flex;
     justify-content: center;
-    gap: 10px;
-    margin-top: 10px;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.color-block-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin: 12px;
 }
 
 .color-block {
-    width: 60px;
-    height: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 600px;
+    height: 120px;
+    border: 2px solid #000;
+    border-radius: 4px;
     position: relative;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
 }
 
-.color-block span {
-    position: absolute;
-    bottom: -20px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 14px;
+.color-label {
+    margin-top: 8px;
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
 }
 
 footer {
   text-align: center;
   font-size: 16px;
+  margin: 20px;
+}
+
+.footer a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #0056b3;
 }

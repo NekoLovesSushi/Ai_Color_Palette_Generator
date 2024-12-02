@@ -12,6 +12,8 @@
     <title>Ai Color Palette Generator</title>
 </head>
 <body>
+  <div class="box">
+    
     <h1>Ai Color Palette Generator</h1>
 
     <main>
@@ -20,10 +22,11 @@
             <input type="submit" value="Generate Palette" />
         </form>
 
-        <div id="imageContainer"></div>
-        <div id="paletteContainer"></div>
-    </main>
+  
 
+        <div id="paletteContainer" class="palette-container"></div>
+    </main>
+  </div>
     <footer class="footer">
         This project was coded with 💝 by
         <a href="https://github.com/NekoLovesSushi" target="_blank"
@@ -35,7 +38,8 @@
           >Netlify</a>
         <br>
         <a href="index.html" class="footer-home-link">Home</a>
-      </footer>  
+      </footer> 
+     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> 
     <script src="src/index.js"></script>   
 </body>
 </html>
