@@ -1,6 +1,4 @@
 body {
-  background-color: snow;
-  color: midnightblue;
   font-family: "DM Serif Text", serif;
   font-weight: 400;
 }
@@ -13,5 +11,4 @@ h1 {
 footer {
   text-align: center;
   font-size: 20px;
-  color: midnightblue;
 }
