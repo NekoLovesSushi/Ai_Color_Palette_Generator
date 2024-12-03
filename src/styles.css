@@ -57,6 +57,10 @@ input[type="submit"]:hover {
     background-color: #A9D6E5;
 }
 
+.hidden {
+    display: none;
+}
+
 .palette-container {
     background-color: snow;
     border: 2px solid #ddd;

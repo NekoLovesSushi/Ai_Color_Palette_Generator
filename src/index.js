@@ -4,6 +4,9 @@ const promptInput = document.querySelector("#prompt");
 const paletteContainer = document.querySelector("#paletteContainer");
 const apiKey = "21e8a41ecb5f3t140bf774eca0oae7aa";
 
+// Initially hide the palette container
+paletteContainer.classList.add("hidden");
+
 // Handle form submission
 paletteForm.addEventListener("submit", function (event) {
     event.preventDefault();
@@ -22,6 +25,9 @@ paletteForm.addEventListener("submit", function (event) {
             const colors = answer.match(/#[a-fA-F0-9]{6}/g); 
 
             if (colors && colors.length === 5) {
+                // Show the palette container
+                paletteContainer.classList.remove("hidden"); 
+
                 paletteContainer.innerHTML = colors.map(color => `
                     <div class="color-block-wrapper">
                         <div class="color-block" style="background-color: ${color};"></div>
